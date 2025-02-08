@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.work-sans-font {
+    font-family: "Work Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Shared Styles */
+.display-flex{
+    display: flex;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.tittle{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+.sub-tittle{
+    color: #131313;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.description{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+}
+.btn-primary{
+    color: #fff;
+    background-color: rgba(255, 144, 14, 1);
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px 25px;
+    border-radius: 8px;
+    border: none;
+}
+.banner-tittle{
+    color: #131313;
+    font-size: 4rem;
+    font-weight: bold;
+}
+/* Start Main Style */
+header{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.navbar{
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar ul li{
+    list-style: none;
+    margin-right: 25px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #424242;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.navbar ul{
+    text-align: center;
+}
+
+/* Banner Part */
+
+.banner-part{
+    max-width: 1440px;
+    margin: 0px auto;
+}
+.banner-part img{
+    width: 100%;
+}
+.banner-part .banner-item{
+    width: 870px;
+    margin: 50px auto;
+}
+
+.banner-item .description{
+    margin: 20px 0px;
+}
+@media screen and (max-width: 576px){
+    .navbar,
+    .navbar ul{
+        flex-direction: column;
+    }
+    .brand-name{
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    .navbar ul li a{
+        font-size: 0.8rem;
+    }
+    .banner-part .banner-item{
+        width: 100%;
+    }
+    .banner-tittle{
+        font-size: 2rem;
+    }
+    .banner-item .description{
+        font-size: 1rem;
+    }
+}
