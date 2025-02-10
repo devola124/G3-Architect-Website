@@ -54,6 +54,13 @@
     font-size: 4rem;
     font-weight: bold;
 }
+main{
+
+}
+main > section{
+    max-width: 1440px;
+    margin: 130px auto;
+}
 /* Start Main Style */
 header{
     background-color: rgba(255, 144, 14, 0.1);
@@ -91,10 +98,39 @@ header{
     width: 870px;
     margin: 50px auto;
 }
-
 .banner-item .description{
     margin: 20px 0px;
 }
+
+/* Style For Features section */
+
+.features-section{
+    display: flex;
+    align-items: center;
+}
+.features-img img{
+    width: 100%;
+}
+.features-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.features-content{
+    width: 537px;
+    margin-left: 70px;
+}
+.features-content .description{
+    margin: 24px 0px;
+}
+.quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+.features-style{
+    color: #FF900E;
+}
+
 @media screen and (max-width: 576px){
     .navbar,
     .navbar ul{
@@ -114,6 +150,31 @@ header{
         font-size: 2rem;
     }
     .banner-item .description{
+        font-size: 1rem;
+        padding: 0px 20px;
+    }
+    /* features section */
+    .features-section{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .features-img{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .features-img img{
+        width: 100%;
+    }
+    .features-content{
+        width: 100%;
+        margin-right: 0px;
+        margin: auto;
+        padding: 0px 20px;
+    }
+    .features-content .tittle{
+        font-size: 2.2rem;
+    }
+    .features-content .description{
+        /* padding-right: 20px; */
         font-size: 1rem;
     }
 }
