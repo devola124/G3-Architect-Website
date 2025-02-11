@@ -11,6 +11,8 @@
     font-weight: 400;
     font-style: normal;
 }
+
+
 /* Shared Styles */
 .display-flex{
     display: flex;
@@ -61,7 +63,7 @@ main > section{
     max-width: 1440px;
     margin: 130px auto;
 }
-/* Start Main Style */
+/* 0..Start Main Style */
 header{
     background-color: rgba(255, 144, 14, 0.1);
 }
@@ -85,7 +87,7 @@ header{
     text-align: center;
 }
 
-/* Banner Part */
+/* 1..Banner Part */
 
 .banner-part{
     max-width: 1440px;
@@ -102,7 +104,7 @@ header{
     margin: 20px 0px;
 }
 
-/* Style For Features section */
+/* 2..Style For Features section */
 
 .features-section{
     display: flex;
@@ -131,6 +133,46 @@ header{
     color: #FF900E;
 }
 
+/* 3..Features About Section Part */
+
+.Features-About-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 54px;
+}
+.Features-About-content{
+    padding: 60px 0px;
+    margin-right: 80px;
+}
+.Features-About-tittle{
+    border-left: 4px solid #FF900E;
+    padding-left: 15px;
+}
+.Features-About-description{
+    margin: 20px 0px;
+}
+.Features-About-Item{
+    box-shadow: 0px 5px 5px 0px #ddd;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.experience{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.experience-a{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.Features-About-section .Features-img-box .btn-primary{
+    margin-left: -80px;
+    margin-top: -80px;
+}
+.Features-img-box img{
+    width: 100%;
+    border-radius: 8px;
+}
+
 @media screen and (max-width: 576px){
     .navbar,
     .navbar ul{
@@ -153,7 +195,7 @@ header{
         font-size: 1rem;
         padding: 0px 20px;
     }
-    /* features section */
+    /* 2.. features section */
     .features-section{
         flex-direction: column;
         gap: 30px;
@@ -176,5 +218,29 @@ header{
     .features-content .description{
         /* padding-right: 20px; */
         font-size: 1rem;
+    }
+
+    /* 3..Features About Section Responsive Part  */
+    
+    main > section{
+        margin: 70px 0px;
+    }
+
+    .Features-About-section{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .Features-About-content{
+        margin-right: auto;
+        padding: 60px 40px;
+    }
+    .Features-About-content .tittle{
+        font-size: 2.2rem;
+    }
+    .Features-About-content .description{
+        font-size: 1rem;
+    }
+    .Features-About-section .Features-img-box .btn-primary{
+        margin-left: 80px;
+        margin-top: 60px; 
     }
 }
