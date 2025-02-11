@@ -141,7 +141,7 @@ header{
     gap: 54px;
 }
 .Features-About-content{
-    padding: 60px 0px;
+    padding: 40px 0px;
     margin-right: 80px;
 }
 .Features-About-tittle{
@@ -154,7 +154,7 @@ header{
 .Features-About-Item{
     box-shadow: 0px 5px 5px 0px #ddd;
     padding: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 .experience{
     font-size: 3rem;
