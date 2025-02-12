@@ -156,6 +156,9 @@ header{
     padding: 30px;
     margin-bottom: 25px;
 }
+.Features-About-Item .sub-tittle{
+    margin-bottom: 15px;
+}
 .experience{
     font-size: 3rem;
     font-weight: bold;
@@ -196,6 +199,23 @@ header{
     color: #727272;
     font-size: 1rem;
     font-weight: 500;
+}
+
+/* 5..Sponsors Section */
+
+.sponsor-info{
+    max-width: 540px;
+    margin: 40px auto;
+}
+.sponsors-description{
+    margin-top: 24px;
+}
+.sponsor-img{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.sponsor-img img{
+    filter: grayscale(100%);
 }
 
 @media screen and (max-width: 576px){
@@ -268,7 +288,7 @@ header{
         margin-left: 60px;
         margin-top: 60px; 
     }
-    /* some - facts section with responsive */
+    /*  4.. some - facts section with responsive */
     .some-facts-section{
         padding: 30px;
     }
@@ -278,5 +298,14 @@ header{
     }
     .some-facts-item{
         width: 100%;
+    }
+    /* 5..Sponsors Section Responsive Part */
+    .sponsor-img{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 24px;
+    }
+    .sponsor-info{
+        padding: 20px;
     }
 }
